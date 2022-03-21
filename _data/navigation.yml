@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "Document"
+    url: /
+  - title: "Blog"
+    url: /
+  - title: "Contact"
+    url: /
