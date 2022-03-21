@@ -14,21 +14,21 @@ excerpt: >
 intro:
   - excerpt: "The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……"
 feature_row:
-  - image_path: /assets/images/1.png
+  - image_path: /assets/images/tokenEconomy.png
     alt: "Token Economy"
     title: "Token Economy"
     excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
     url: "/docs/configuration/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/2.png
+  - image_path: /assets/images/contributionPool.png
     alt: "Contribution Pool"
     title: "Contribution Pool"
     excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
     url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/3.png
+  - image_path: /assets/images/stakingReward.png
     alt: "Staking Reward"
     title: "Staking Reward"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
