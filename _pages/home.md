@@ -6,32 +6,32 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/background.png
   actions:
-    - label: "<i class='fas fa-download'></i> Install now"
-      url: "/docs/quick-start-guide/"
+    - label: "<i class='fa fa-solid fa-registered'></i> Pre-register now"
+      url: "https://forms.gle/fvZSLWvRqwnR9wFbA"
 excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
+  The genesis game of the play-to-earn Wasteland series.<br />
+  <small><a href="">Release Date: Jun 28</a></small>
 intro:
   - excerpt: "The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……"
 feature_row:
   - image_path: /assets/images/tokenEconomy.png
-    alt: "Token Economy"
-    title: "Token Economy"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
+    alt: "Tokenomics"
+    title: "Tokenomics"
+    excerpt: "Understand the supply and demand characteristics of the $WASTE token"
     url: "/docs/configuration/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/contributionPool.png
     alt: "Contribution Pool"
     title: "Contribution Pool"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
+    excerpt: "Play to earn game assets, then exchange your game assets for $WASTE rewards"
     url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/stakingReward.png
     alt: "Staking Reward"
     title: "Staking Reward"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
+    excerpt: "Stake your $WASTE tokens and get additional rewards for your support of the Wasteland DAO"
     url: "/docs/license/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
