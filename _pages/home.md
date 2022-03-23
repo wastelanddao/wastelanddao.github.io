@@ -13,20 +13,23 @@ excerpt: >
   <small><a href="">Release Date: Jun 20, 2022</a></small>
 # intro:
 #   - excerpt: "The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……"
-gallery:
+feature_row:
   - url: /assets/images/survive.png
     image_path: /assets/images/survive.png
-    alt: "placeholder image 1"
-    title: "Image 1 title caption"
+    alt: "Survive"
+    title: "Survive"
+    excerpt: "Collect and make foods to survive"
   - url: /assets/images/explore.jpeg
     image_path: /assets/images/explore.jpeg
-    alt: "placeholder image 2"
-    title: "Image 2 title caption"
+    alt: "Explore"
+    title: "Explore"
+    excerpt: "Find treasury boxes and grow population"
   - url: /assets/images/earn.jpeg
     image_path: /assets/images/earn.jpeg
-    alt: "placeholder image 3"
-    title: "Image 3 title caption"
-feature_row:
+    alt: "Earn"
+    title: "Earn"
+    excerpt: "Contribute game assets for $WASTE rewards"
+feature_row2:
   - image_path: /assets/images/tokenEconomy.png
     alt: "Tokenomics"
     title: "Tokenomics"
