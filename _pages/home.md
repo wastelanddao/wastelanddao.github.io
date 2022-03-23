@@ -8,27 +8,51 @@ header:
   actions:
     - label: "<i class='fa fa-solid fa-registered'></i> Pre-register now"
       url: "https://forms.gle/fvZSLWvRqwnR9wFbA"
+
 excerpt: >
   The genesis game of the play-to-earn Wasteland series.<br />
   <small><a href="">Release Date: Jun 20, 2022</a></small>
+
 intro:
-   - excerpt: "The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……"
+  - excerpt: "Wasteland Settlers is a  Play-to-Earn, Free-to-Play Role-Playing game about survival, exploration and collecting. Players don't need to level up, simply explore the land and equip their villagers to get more rewards. The unique tokenomics solves the problem of hyperinflationary and that NFTs are hard to sell. The future of this game is driven by the community, in which 85% of $WASTE tokens are distributed to the community."
+
+# gallery:
+#   - url: /assets/images/survive.png
+#     image_path: /assets/images/survive.png
+#     alt: "placeholder image 1"
+#     title: "Image 1 title caption"
+#   - url: /assets/images/explore.jpeg
+#     image_path: /assets/images/explore.jpeg
+#     alt: "placeholder image 2"
+#     title: "Image 2 title caption"
+#   - url: /assets/images/earn.jpeg
+#     image_path: /assets/images/earn.jpeg
+#     alt: "placeholder image 3"
+#     title: "Image 3 title caption"
+
 feature_row:
-  - url: /assets/images/survive.png
-    image_path: /assets/images/survive.png
+  - image_path: /assets/images/survive.png
     alt: "Survive"
-    title: "Survive"
-    excerpt: "Collect and make foods to survive"
-  - url: /assets/images/explore.jpeg
-    image_path: /assets/images/explore.jpeg
+    # title: "Survive"
+    excerpt: "<br />Collect and make foods to survive"
+    # url: "#test-link"
+    # btn_label: "Read More"
+    # btn_class: "btn--primary"
+  - image_path: /assets/images/explore.jpeg
     alt: "Explore"
-    title: "Explore"
-    excerpt: "Find treasury boxes and grow population"
-  - url: /assets/images/earn.jpeg
-    image_path: /assets/images/earn.jpeg
+    # title: "Explore"
+    excerpt: "<br />Find treasury boxes and grow population"
+    # url: "#test-link"
+    # btn_label: "Read More"
+    # btn_class: "btn--primary"
+  - image_path: /assets/images/earn.jpeg
     alt: "Earn"
-    title: "Earn"
-    excerpt: "Contribute game assets for $WASTE rewards"
+    # title: "Earn"
+    excerpt: "<br />Contribute game assets for $WASTE rewards"
+    # url: "#test-link"
+    # btn_label: "Read More"
+    # btn_class: "btn--primary"
+
 feature_row2:
   - image_path: /assets/images/tokenEconomy.png
     alt: "Tokenomics"
@@ -51,14 +75,6 @@ feature_row2:
     url: "/docs/license/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-# feature_row2:
-#   - image_path: /assets/images/1.png
-#     alt: "placeholder image 2"
-#     title: "Placeholder Image Left Aligned"
-#     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-#     url: "#test-link"
-#     btn_label: "Read More"
-#     btn_class: "btn--primary"
 # feature_row3:
 #   - image_path: /assets/images/1.png
 #     alt: "placeholder image 2"
@@ -77,14 +93,14 @@ feature_row2:
 #     btn_class: "btn--primary"
 ---
 
-{% include feature_row id="intro" type="center" %} 
-<!--
-{% include gallery caption="The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……" %}
--->
+{% include feature_row id="intro" type="center" %}
+
+<!-- {% include gallery caption="The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……" %} -->
+
 {% include feature_row %}
 
-{% include feature_row id="feature_row2" type="left" %}
-<!--
-{% include feature_row id="feature_row3" type="right" %}
+{% include feature_row id="feature_row2" %}
+
+<!-- {% include feature_row id="feature_row3" type="right" %}
 
 {% include feature_row id="feature_row4" type="center" %} -->
