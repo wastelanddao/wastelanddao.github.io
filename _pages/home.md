@@ -10,9 +10,22 @@ header:
       url: "https://forms.gle/fvZSLWvRqwnR9wFbA"
 excerpt: >
   The genesis game of the play-to-earn Wasteland series.<br />
-  <small><a href="">Release Date: Jun 28</a></small>
-intro:
-  - excerpt: "The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……"
+  <small><a href="">Release Date: Jun 20, 2022</a></small>
+# intro:
+#   - excerpt: "The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……"
+gallery:
+  - url: /assets/images/survive.png
+    image_path: /assets/images/survive.png
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /assets/images/explore.jpeg
+    image_path: /assets/images/explore.jpeg
+    alt: "placeholder image 2"
+    title: "Image 2 title caption"
+  - url: /assets/images/earn.jpeg
+    image_path: /assets/images/earn.jpeg
+    alt: "placeholder image 3"
+    title: "Image 3 title caption"
 feature_row:
   - image_path: /assets/images/tokenEconomy.png
     alt: "Tokenomics"
@@ -61,7 +74,9 @@ feature_row:
 #     btn_class: "btn--primary"
 ---
 
-{% include feature_row id="intro" type="center" %}
+<!-- {% include feature_row id="intro" type="center" %} -->
+
+{% include gallery caption="The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……" %}
 
 {% include feature_row %}
 
