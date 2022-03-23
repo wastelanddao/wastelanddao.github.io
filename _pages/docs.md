@@ -5,7 +5,7 @@ title: "Documentation"
 toc: true
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: /assets/images/background.png
   actions:
     - label: "<i class='fas fa-download'></i> Whitepaper"
       url: "/docs/quick-start-guide/"
