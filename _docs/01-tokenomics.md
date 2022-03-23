@@ -3,7 +3,7 @@ title: "Tokenomics"
 permalink: /docs/tokenomics/
 header:
   overlay_color: "#5e616c"
-  overlay_image: ../assets/images/documentation.jpg
+  overlay_image: /assets/images/documentation.jpg
 toc: true
 ---
 
