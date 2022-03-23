@@ -3,6 +3,7 @@ main:
   - title: "Home"
     url: /
   - title: "Documentation"
+    url: /docs
     children:
       - title: "Whitepaper"
         url: /whitepaper/
@@ -13,6 +14,6 @@ main:
       - title: "FAQ"
         url: /faq/
   - title: "Blog"
-    url: /
+    url: /blog
   - title: "Contact"
     url: https://forms.gle/fvZSLWvRqwnR9wFbA
