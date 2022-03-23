@@ -3,17 +3,18 @@ main:
   - title: "Home"
     url: /
   - title: "Documentation"
-    url: /docs/
-    children:
-      - title: "Whitepaper"
-        url: /whitepaper/
-      - title: "Tokenomics"
-        url: /tokenomics/
-      - title: "Roadmap"
-        url: /roadmap/
-      - title: "FAQ"
-        url: /faq/
+    url: /docs/tokenomics/
   - title: "Blog"
     url: /blog/
   - title: "Contact"
     url: https://forms.gle/fvZSLWvRqwnR9wFbA
+
+docs:
+  - title: Documentation
+    children:
+      - title: "Tokenomics"
+        url: /docs/tokenomics/
+      - title: "Roadmap"
+        url: /docs/roadmap/
+      - title: "FAQs"
+        url: /docs/faq/
