@@ -1,7 +1,15 @@
 ---
+layout: splash
 permalink: /docs/
 title: "Documentation"
 toc: true
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/mm-home-page-feature.jpg
+  actions:
+    - label: "<i class='fas fa-download'></i> Whitepaper"
+      url: "/docs/quick-start-guide/"
+
 ---
 
 ## Tokenomics
