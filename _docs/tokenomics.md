@@ -1,7 +1,6 @@
 ---
 layout: splash
-permalink: /docs/tokenomics
-title: "Tokenomics"
+permalink: /docs/tokenomics/
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/documentation.jpg
