@@ -8,7 +8,7 @@ header:
   overlay_image: /assets/images/background.png
   actions:
     - label: "<i class='fas fa-download'></i> Whitepaper"
-      url: "/docs/quick-start-guide/"
+      url: "/docs/whitepaper.pdf"
 
 ---
 
