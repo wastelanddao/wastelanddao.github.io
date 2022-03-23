@@ -3,7 +3,7 @@ main:
   - title: "Home"
     url: /
   - title: "Documentation"
-    url: /docs/tokenomics/
+    url: /docs/getting-started/
   - title: "Blog"
     url: /blog/
   - title: "Contact"
@@ -13,9 +13,19 @@ main:
 docs:
   - title: Documentation
     children:
+      - title: "Getting Started"
+        utl: /docs/getting-started/
       - title: "Tokenomics"
         url: /docs/tokenomics/
       - title: "Roadmap"
         url: /docs/roadmap/
       - title: "FAQs"
         url: /docs/faq/
+  - title: Rewards
+    children:
+      - title: "Contribution Pool"
+        url: /docs/contribution-pool/
+      - title: "Staking Rewards"
+        url: /docs/staking-rewards/
+      - title: "Liquidity Provider Rewards"
+        url: /docs/liquidity-provider-rewards/
