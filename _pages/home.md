@@ -11,8 +11,8 @@ header:
 excerpt: >
   The genesis game of the play-to-earn Wasteland series.<br />
   <small><a href="">Release Date: Jun 20, 2022</a></small>
-# intro:
-#   - excerpt: "The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……"
+intro:
+   - excerpt: "The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……"
 feature_row:
   - url: /assets/images/survive.png
     image_path: /assets/images/survive.png
@@ -77,10 +77,10 @@ feature_row2:
 #     btn_class: "btn--primary"
 ---
 
-<!-- {% include feature_row id="intro" type="center" %} -->
-
+{% include feature_row id="intro" type="center" %} 
+<!--
 {% include gallery caption="The civilization of earth was destroyed by the alien raiders. After millions of nuclear missiles devastated our green homeland then Aliens flew away with robberies of gold and other rare metals. Earth has turned into a wasteland where survival is the primary objective……" %}
-
+-->
 {% include feature_row %}
 
 {% include feature_row id="feature_row2" type="left" %}
