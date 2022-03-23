@@ -2,19 +2,25 @@
 layout: splash
 permalink: /docs/
 title: "Documentation"
-toc: true
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/documentation.jpg
   actions:
     - label: "<i class='fas fa-download'></i> Whitepaper"
       url: "/docs/whitepaper.pdf"
+tags:
+  - table of contents
+toc: true
+toc_label: "Documentation"
+toc_icon: "heart"
 
 ---
 
 ## Tokenomics
 
 The $WASTE token is the protocol token from the Wasteland Settlers ecosystem. It is an ERC-20 token deployed on the Ethereum blockchain. $WASTE has a supply cap of 1 billion tokens. Players can purchase NFTs with $WASTE in the game, get rewards from the contribution pool, and stake $WASTE to get additional token rewards.
+
+### Token Distribution
 
 The Wasteland Settlers community owns 85% of the total $WASTE tokens. Others are reserved for private investors and the team. Details of the allocation are listed in the following table:
 
