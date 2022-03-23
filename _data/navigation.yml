@@ -2,8 +2,7 @@
 main:
   - title: "Home"
     url: /
-  - title: "Document"
-    url: /
+  - title: "Documentation"
     children:
       - title: "Whitepaper"
         url: /whitepaper/
