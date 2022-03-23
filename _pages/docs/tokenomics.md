@@ -1,9 +1,12 @@
 ---
-title: "Tokenomics"
+title: "Documentation"
 permalink: /docs/tokenomics/
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/documentation.jpg
+  actions:
+    - label: "<i class='fas fa-download'></i> Whitepaper"
+      url: "/docs/whitepaper.pdf"
 nav: "docs"  
 toc: true
 ---
