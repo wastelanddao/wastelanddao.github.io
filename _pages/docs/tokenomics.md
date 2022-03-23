@@ -7,7 +7,8 @@ header:
   actions:
     - label: "<i class='fas fa-download'></i> Whitepaper"
       url: "/docs/whitepaper.pdf"
-nav: "docs"  
+sidebar:
+  nav: "docs"       
 toc: true
 ---
 
