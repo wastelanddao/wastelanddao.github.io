@@ -71,7 +71,7 @@ feature_row2:
   - image_path: /assets/images/stakingReward.png
     alt: "Staking Reward"
     title: "Staking Reward"
-    excerpt: "Stake your $WASTE tokens and get additional rewards for your support of the Wasteland DAO"
+    excerpt: "Stake your $WASTE tokens and get rewards for your support of the Wasteland DAO"
     url: "/docs/license/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
