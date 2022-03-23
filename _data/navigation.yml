@@ -4,6 +4,15 @@ main:
     url: /
   - title: "Document"
     url: /
+    children:
+      - title: "Whitepaper"
+        url: /whitepaper/
+      - title: "Tokenomics"
+        url: /tokenomics/
+      - title: "Roadmap"
+        url: /roadmap/
+      - title: "FAQ"
+        url: /faq/
   - title: "Blog"
     url: /
   - title: "Contact"
