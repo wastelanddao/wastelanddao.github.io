@@ -96,7 +96,7 @@ const DesktopComponent = () => {
             <img src={IntroductionLeft} alt="IntroductionLeft" />
           </div>
           <div className={classNames(`${prefix}-introduction-header-text`)}>
-            INTRODUCTION
+            INTRO
           </div>
           <div className={classNames(`${prefix}-introduction-header-img`)}>
             <img src={IntroductionRight} alt="IntroductionRight" />
@@ -301,7 +301,7 @@ const DesktopComponent = () => {
           </div>
         </div>
       </div>
-      <div className={classNames(`${prefix}-team`)}>
+      {/* <div className={classNames(`${prefix}-team`)}>
         <div className={classNames(`${prefix}-team-header`)}>
           <div className={classNames(`${prefix}-team-header-img`)}>
             <img src={IntroductionLeft} alt="IntroductionLeft" />
@@ -351,14 +351,14 @@ const DesktopComponent = () => {
               <div
                 className={classNames(`${prefix}-team-content-item-right-name`)}
               >
-                Li
+                0xswiftfox
               </div>
               <div
                 className={classNames(`${prefix}-team-content-item-right-desc`)}
               >
-                Li is seasoned crypto player, Bitcoin and blockchain advocator.
-                Li was IBM consulting director and senior executive of public
-                listed company.
+                A seasoned crypto player, bitcoin and blockchain advocator,
+                former IBM consultant and senior executive of a public listed
+                company.
               </div>
             </div>
           </div>
@@ -433,7 +433,7 @@ const DesktopComponent = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={classNames(`${prefix}-contact`)}>
         <div className={classNames(`${prefix}-contact-logo`)}>
           <img src={Img_logo3} alt="img_logo3" />

@@ -199,7 +199,7 @@ const MobileComponent = () => {
             <img src={Img_roadmap} alt="Img_roadmap" />
           </div>
         </div>
-        <div className={classNames(`${prefix}-team`)}>
+        {/* <div className={classNames(`${prefix}-team`)}>
           <div className={classNames(`${prefix}-team-ys`)}>
             <img src={WASTELANDSETTLERS_r} alt="WASTELANDSETTLERS_r" />
           </div>
@@ -280,7 +280,7 @@ const MobileComponent = () => {
               <img src={Img_faq2} alt="Img_faq2" />
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={classNames(`${prefix}-contact`)}>
           <div className={classNames(`${prefix}-contact-logo`)}>
             <img src={Img_logo4} alt="Img_logo4" />
