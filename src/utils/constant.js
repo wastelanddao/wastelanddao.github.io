@@ -41,3 +41,9 @@ export const FAQ = [
     desc: "",
   },
 ];
+
+export const externalLine = [
+  { key: "Twitter", value: "https://twitter.com/WastelandSettle" },
+  { key: "Discord", value: "https://discord.gg/sQFdvhCt" },
+  { key: "Medium", value: "https://wastelandsettlers.medium.com" },
+];

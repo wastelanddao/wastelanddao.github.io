@@ -39,6 +39,7 @@ import Medium from "../assets/images/mobile/Medium@2x.png";
 import Discord from "../assets/images/mobile/Discord@2x.png";
 import Icon_c from "../assets/images/mobile/icon_c@2x.png";
 import Button_signup from "../assets/images/mobile/button_signup@2x.png";
+import { jumpToExternalLink } from "../utils/common";
 
 const MobileComponent = () => {
   const prefix = "page-home-mobile";
@@ -53,11 +54,25 @@ const MobileComponent = () => {
     setVisible(false);
   };
 
+  const scrollToAnchor = (anchorName) => {
+    if (anchorName) {
+      // 找到锚点
+      let anchorElement = document.getElementById(anchorName);
+      // 如果对应id的锚点存在，就跳转到锚点
+      if (anchorElement) {
+        anchorElement.scrollIntoView({ block: "start", behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <>
-      <div className={classNames(prefix)}>
+      <div className={classNames(prefix)} id="Home">
         <div className={classNames(`${prefix}-header`)}>
-          <div className={classNames(`${prefix}-header-logo`)}>
+          <div
+            className={classNames(`${prefix}-header-logo`)}
+            onClick={() => scrollToAnchor("Home")}
+          >
             <img src={LOGO} alt="LOGO" />
           </div>
           <div className={classNames(`${prefix}-header-signup`)}>
@@ -145,7 +160,7 @@ const MobileComponent = () => {
             </div>
           </div>
         </div>
-        <div className={classNames(`${prefix}-token`)}>
+        <div className={classNames(`${prefix}-token`)} id="TOKENOMICS">
           <div className={classNames(`${prefix}-token-ys`)}>
             <img src={WASTELANDSETTLERS_l} alt="WASTELANDSETTLERS_l" />
           </div>
@@ -193,7 +208,7 @@ const MobileComponent = () => {
             <img src={Img_reward} alt="Img_reward" />
           </div>
         </div>
-        <div className={classNames(`${prefix}-roadmap`)}>
+        <div className={classNames(`${prefix}-roadmap`)} id="ROADMAP">
           <Header title="ROADMAP" />
           <div className={classNames(`${prefix}-roadmap-img`)}>
             <img src={Img_roadmap} alt="Img_roadmap" />
@@ -236,8 +251,8 @@ const MobileComponent = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={classNames(`${prefix}-supporters`)}>
+        </div> */}
+        <div className={classNames(`${prefix}-supporters`)} id="FAQ">
           <Header title="THE SUPPORTERS" />
           <div className={classNames(`${prefix}-supporters-content`)}>
             <div className={classNames(`${prefix}-supporters-content-ys`)}>
@@ -280,19 +295,28 @@ const MobileComponent = () => {
               <img src={Img_faq2} alt="Img_faq2" />
             </div>
           </div>
-        </div> */}
+        </div>
         <div className={classNames(`${prefix}-contact`)}>
           <div className={classNames(`${prefix}-contact-logo`)}>
             <img src={Img_logo4} alt="Img_logo4" />
           </div>
           <div className={classNames(`${prefix}-contact-suspension`)}>
-            <div className={classNames(`${prefix}-contact-suspension-item`)}>
+            <div
+              className={classNames(`${prefix}-contact-suspension-item`)}
+              onClick={() => jumpToExternalLink("Twitter")}
+            >
               <img src={Twitter} alt="Twitter" />
             </div>
-            <div className={classNames(`${prefix}-contact-suspension-item`)}>
+            <div
+              className={classNames(`${prefix}-contact-suspension-item`)}
+              onClick={() => jumpToExternalLink("Medium")}
+            >
               <img src={Medium} alt="Medium" />
             </div>
-            <div className={classNames(`${prefix}-contact-suspension-item`)}>
+            <div
+              className={classNames(`${prefix}-contact-suspension-item`)}
+              onClick={() => jumpToExternalLink("Discord")}
+            >
               <img src={Discord} alt="Discord" />
             </div>
           </div>
@@ -322,19 +346,43 @@ const MobileComponent = () => {
             </div>
           </div>
           <div className={classNames(`${prefix}-popup-container-nav`)}>
-            <div className={classNames(`${prefix}-popup-container-nav-item`)}>
+            <div
+              className={classNames(`${prefix}-popup-container-nav-item`)}
+              onClick={() => {
+                scrollToAnchor("Home");
+                setVisible(false);
+              }}
+            >
               HOME
             </div>
             <div className={classNames(`${prefix}-popup-container-nav-item`)}>
               WHITERAPER
             </div>
-            <div className={classNames(`${prefix}-popup-container-nav-item`)}>
+            <div
+              className={classNames(`${prefix}-popup-container-nav-item`)}
+              onClick={() => {
+                scrollToAnchor("TOKENOMICS");
+                setVisible(false);
+              }}
+            >
               TOKENOMICS
             </div>
-            <div className={classNames(`${prefix}-popup-container-nav-item`)}>
+            <div
+              className={classNames(`${prefix}-popup-container-nav-item`)}
+              onClick={() => {
+                scrollToAnchor("ROADMAP");
+                setVisible(false);
+              }}
+            >
               ROADMAP
             </div>
-            <div className={classNames(`${prefix}-popup-container-nav-item`)}>
+            <div
+              className={classNames(`${prefix}-popup-container-nav-item`)}
+              onClick={() => {
+                scrollToAnchor("FAQ");
+                setVisible(false);
+              }}
+            >
               FAQ
             </div>
             <div className={classNames(`${prefix}-popup-container-nav-item`)}>
@@ -354,6 +402,7 @@ const MobileComponent = () => {
                 className={classNames(
                   `${prefix}-popup-container-footer-contact-item`
                 )}
+                onClick={() => jumpToExternalLink("Twitter")}
               >
                 <img src={Twitter} alt="Twitter" />
               </div>
@@ -361,6 +410,7 @@ const MobileComponent = () => {
                 className={classNames(
                   `${prefix}-popup-container-footer-contact-item`
                 )}
+                onClick={() => jumpToExternalLink("Medium")}
               >
                 <img src={Medium} alt="Medium" />
               </div>
@@ -368,6 +418,7 @@ const MobileComponent = () => {
                 className={classNames(
                   `${prefix}-popup-container-footer-contact-item`
                 )}
+                onClick={() => jumpToExternalLink("Discord")}
               >
                 <img src={Discord} alt="Discord" />
               </div>

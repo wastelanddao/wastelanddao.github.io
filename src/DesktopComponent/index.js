@@ -40,9 +40,21 @@ import Img_faq2 from "../assets/images/pc/img_faq2@2x.png";
 import Img_ys4 from "../assets/images/pc/img_ys4@2x.png";
 import Img_logo3 from "../assets/images/pc/img_logo3@2x.png";
 import Copyright from "../assets/images/pc/copyright.png";
+import { jumpToExternalLink } from "../utils/common";
 
 const DesktopComponent = () => {
   const prefix = "page-home-desktop";
+
+  const scrollToAnchor = (anchorName) => {
+    if (anchorName) {
+      // 找到锚点
+      let anchorElement = document.getElementById(anchorName);
+      // 如果对应id的锚点存在，就跳转到锚点
+      if (anchorElement) {
+        anchorElement.scrollIntoView({ block: "start", behavior: "smooth" });
+      }
+    }
+  };
 
   return (
     <div className={classNames(prefix)}>
@@ -57,11 +69,15 @@ const DesktopComponent = () => {
             <img src={HeaderLOGO} alt="HeaderLOGO" />
           </div>
           <div className={classNames(`${prefix}-header-content-center`)}>
-            <div>HOME</div>
+            <div
+              className={classNames(`${prefix}-header-content-center-active`)}
+            >
+              HOME
+            </div>
             <div>WHITERAPER</div>
-            <div>TOKENOMICS</div>
-            <div>ROADMAP</div>
-            <div>FAQ</div>
+            <div onClick={() => scrollToAnchor("TOKENOMICS")}>TOKENOMICS</div>
+            <div onClick={() => scrollToAnchor("ROADMAP")}>ROADMAP</div>
+            <div onClick={() => scrollToAnchor("FAQ")}>FAQ</div>
             <div>CONTACT</div>
           </div>
           <div className={classNames(`${prefix}-header-content-right`)}>
@@ -76,13 +92,22 @@ const DesktopComponent = () => {
           alt="SuspensionBG"
         />
         <div className={classNames(`${prefix}-suspension-content`)}>
-          <div className={classNames(`${prefix}-suspension-content-item`)}>
+          <div
+            className={classNames(`${prefix}-suspension-content-item`)}
+            onClick={() => jumpToExternalLink("Twitter")}
+          >
             <img src={Twitter} alt="Twitter" />
           </div>
-          <div className={classNames(`${prefix}-suspension-content-item`)}>
+          <div
+            className={classNames(`${prefix}-suspension-content-item`)}
+            onClick={() => jumpToExternalLink("Discord")}
+          >
             <img src={Discord} alt="Discord" />
           </div>
-          <div className={classNames(`${prefix}-suspension-content-item`)}>
+          <div
+            className={classNames(`${prefix}-suspension-content-item`)}
+            onClick={() => jumpToExternalLink("Medium")}
+          >
             <img src={Medium} alt="Medium" />
           </div>
         </div>
@@ -177,7 +202,7 @@ const DesktopComponent = () => {
           </div>
         </div>
       </div>
-      <div className={classNames(`${prefix}-token`)}>
+      <div id="TOKENOMICS" className={classNames(`${prefix}-token`)}>
         <div className={classNames(`${prefix}-token-wastelandsettlers`)}>
           <img src={WASTELANDSETTLERS} alt="WASTELANDSETTLERS" />
         </div>
@@ -280,7 +305,7 @@ const DesktopComponent = () => {
           </div>
         </div>
       </div>
-      <div className={classNames(`${prefix}-roadmap`)}>
+      <div id="ROADMAP" className={classNames(`${prefix}-roadmap`)}>
         <div className={classNames(`${prefix}-roadmap-WASTELANDSETTLERS_r`)}>
           <img src={WASTELANDSETTLERS_r} alt="WASTELANDSETTLERS_r" />
         </div>
@@ -363,8 +388,8 @@ const DesktopComponent = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className={classNames(`${prefix}-supporters`)}>
+      </div> */}
+      <div id="FAQ" className={classNames(`${prefix}-supporters`)}>
         <div className={classNames(`${prefix}-supporters-header`)}>
           <div className={classNames(`${prefix}-supporters-header-img`)}>
             <img src={IntroductionLeft} alt="IntroductionLeft" />
@@ -433,19 +458,28 @@ const DesktopComponent = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className={classNames(`${prefix}-contact`)}>
         <div className={classNames(`${prefix}-contact-logo`)}>
           <img src={Img_logo3} alt="img_logo3" />
         </div>
         <div className={classNames(`${prefix}-contact-suspension`)}>
-          <div className={classNames(`${prefix}-contact-suspension-item`)}>
+          <div
+            className={classNames(`${prefix}-contact-suspension-item`)}
+            onClick={() => jumpToExternalLink("Twitter")}
+          >
             <img src={Twitter} alt="Twitter" />
           </div>
-          <div className={classNames(`${prefix}-contact-suspension-item`)}>
+          <div
+            className={classNames(`${prefix}-contact-suspension-item`)}
+            onClick={() => jumpToExternalLink("Medium")}
+          >
             <img src={Medium} alt="Medium" />
           </div>
-          <div className={classNames(`${prefix}-contact-suspension-item`)}>
+          <div
+            className={classNames(`${prefix}-contact-suspension-item`)}
+            onClick={() => jumpToExternalLink("Discord")}
+          >
             <img src={Discord} alt="Discord" />
           </div>
         </div>
