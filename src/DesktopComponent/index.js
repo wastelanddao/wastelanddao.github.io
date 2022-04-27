@@ -218,7 +218,7 @@ const DesktopComponent = () => {
           </div>
         </div>
         <div className={classNames(`${prefix}-token-desc`)}>
-          It is 1 billion ERC-20 tokens deployed on the Ethereum blockchain
+          WASTE is an EVM compatible tokens deployed on multiple blockchains. WASTE has a supply cap of 1 billion tokens.
         </div>
         <div className={classNames(`${prefix}-token-distribution`)}>
           <div className={classNames(`${prefix}-token-distribution-title`)}>
@@ -292,7 +292,7 @@ const DesktopComponent = () => {
         </div>
         <div className={classNames(`${prefix}-reward-desc`)}>
           <div className={classNames(`${prefix}-reward-desc-text`)}>
-            19.5% of $WASTE tokens are allocated for staking incentives,
+            19.89% of $WASTE tokens are allocated for staking incentives,
           </div>
           <div className={classNames(`${prefix}-reward-desc-text`)}>
             and they are emitted based on a pre-defined schedule as described in
