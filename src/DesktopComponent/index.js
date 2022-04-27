@@ -3,7 +3,6 @@ import classNames from "classnames";
 
 import "./index.less";
 import { FAQItem, GamePlayItem } from "./components";
-import { FAQ } from "../utils/constant";
 import Banner from "../assets/images/pc/img_banner@2x.png";
 import HeaderBG from "../assets/images/pc/img_marbg@2x.png";
 import HeaderLOGO from "../assets/images/pc/LOGO@2x.png";
@@ -74,14 +73,20 @@ const DesktopComponent = () => {
             >
               HOME
             </div>
-            <div>WHITERAPER</div>
+            <div onClick={() => jumpToExternalLink("WHITERAPER")}>
+              WHITERAPER
+            </div>
             <div onClick={() => scrollToAnchor("TOKENOMICS")}>TOKENOMICS</div>
             <div onClick={() => scrollToAnchor("ROADMAP")}>ROADMAP</div>
             <div onClick={() => scrollToAnchor("FAQ")}>FAQ</div>
             <div>CONTACT</div>
           </div>
           <div className={classNames(`${prefix}-header-content-right`)}>
-            <img src={HeaderSignup} alt="HeaderSignup" />
+            <img
+              src={HeaderSignup}
+              alt="HeaderSignup"
+              onClick={() => jumpToExternalLink("SIGNUP")}
+            />
           </div>
         </div>
       </div>
@@ -390,7 +395,7 @@ const DesktopComponent = () => {
         </div>
       </div> */}
       <div id="FAQ" className={classNames(`${prefix}-supporters`)}>
-        <div className={classNames(`${prefix}-supporters-header`)}>
+        {/* <div className={classNames(`${prefix}-supporters-header`)}>
           <div className={classNames(`${prefix}-supporters-header-img`)}>
             <img src={IntroductionLeft} alt="IntroductionLeft" />
           </div>
@@ -400,7 +405,7 @@ const DesktopComponent = () => {
           <div className={classNames(`${prefix}-supporters-header-img`)}>
             <img src={IntroductionRight} alt="IntroductionRight" />
           </div>
-        </div>
+        </div> */}
         <div className={classNames(`${prefix}-supporters-content`)}>
           <div className={classNames(`${prefix}-supporters-content-ys4`)}>
             <img src={Img_ys4} alt="Img_ys4" />
@@ -440,16 +445,212 @@ const DesktopComponent = () => {
             <div
               className={classNames(`${prefix}-supporters-content-item-center`)}
             >
-              {FAQ.map((item, index) => {
-                return (
-                  <FAQItem
-                    key={index}
-                    title={item.title}
-                    desc={item.desc}
-                    initStatus={index === 0}
-                  />
-                );
-              })}
+              <FAQItem
+                title="How do I start to play the game?"
+                desc={
+                  <div>
+                    When you start the game, there is a tutorial that will guide
+                    you through to let you know the basic elements of the game:
+                    Pick fruits, hunt, have a baby and explore. You may hunt or
+                    find fruits, so you have basic foods to survive, or you can
+                    buy workplaces and tools to help you to collect other foods
+                    to increase your villagers' happiness. You may explore and
+                    collect chests, you may find other people, weapons, armories
+                    and even pets. You can either wear those NFTs, or contribute
+                    those NFTs through the portal to earn $WASTE tokens right
+                    away.
+                  </div>
+                }
+                initStatus={true}
+              />
+              <FAQItem
+                title="How can I participate in the game and earn income?"
+                desc={
+                  <div>
+                    <div>
+                      There will be multiple ways for players to participate in
+                      the game economy for both Active and Passive players.
+                    </div>
+                    <div>
+                      Players don't need to pay any fee to play the game, it's
+                      free to play. Players just collect food, go exploring and
+                      contribute your NFTs to earn game tokens. It's slow, but
+                      what you got is what you earned.
+                    </div>
+                    <div>
+                      Or, you can purchase workplaces to produce foods, open
+                      chests to get more NFTs, trade NFTs with other players,
+                      fight in the arena to get weekly PVP rewards.
+                    </div>
+                  </div>
+                }
+              />
+              <FAQItem
+                title="How do I buy Player Identity NFTs?"
+                desc={
+                  <div>
+                    <div>
+                      Identity NFTs are only for pre-sale, please keep an eye on
+                      Wasteland Settlers website and follow us on social media
+                      for the dates of upcoming events.
+                    </div>
+                    <br />
+                    <div>
+                      Identity NFT provides players additional features, and
+                      also your profile picture shows different colored frames
+                      in the game.
+                    </div>
+                    <div>
+                      Green Identity - Increase all player's villagers attribute
+                      7% when the villager has a job assigned. Blue Identity -
+                      Increase all player's villagers attribute 14% when the
+                      villager has a job assigned. Orange Identity - Increase
+                      all player's villagers attribute 21% when the villager has
+                      a job assigned.
+                    </div>
+                  </div>
+                }
+              />
+              <FAQItem
+                title="Can I use my existing NFT as my profile picture?"
+                desc={
+                  <div>
+                    <div>
+                      Yes, currently, we are supporting many NFT and you can use
+                      your NFT as the profile picture if your NFT is in the
+                      list.
+                    </div>
+                    <br />
+                    <div>
+                      Bored Ape Yacht Club, Mutant Ape Yacht Club, CryptoPunks,
+                      Bored Ape Kennel Club, MURI by Haus, Azuki, CLONE X,
+                      ZombieClub Token, Doodles, Meebits, CrypToadz by GREMPLIN,
+                      Bored Ape Chemistry Club, Cool Cats NFT, DourDarcels,
+                      World of Women, GNSS by MGXS, MPL Official, 3Landers,
+                      CyberBrokers, Gutter Juice, NFT Worlds, Invisible Friends,
+                      mfers, Loser Club Official, RaidParty Fighters, Kibatsu
+                      Mecha, VeeFriends, Metroverse Genesis, Gutter Cat Gang, I
+                      Like You, You're Weird, SKULLTOONS Gavroche, Cool Pets
+                      NFT, White Sands Parcel Pass, Decentraland, Chromie
+                      Squiggle by Snowfro, RaidParty Heroes, Coolman's Universe,
+                      hausphases by Haus, Kaiju Kingz, Villagers of XOLO,
+                      Decentral Games ICE Poker, Llamaverse Genesis, ASM Brains,
+                      Acrocalypse, Karafuru, Super Ordinary Villains, Broskees
+                      NFTs, MultiverseVM, Cryptoshack Club, PhantaBear
+                    </div>
+                  </div>
+                }
+              />
+              <FAQItem
+                title="What is the tokennomics model in Wasteland Settlers?"
+                desc={
+                  <div>
+                    <div>
+                      The $WASTE token is the protocol token from the Wasteland
+                      Settlers ecosystem. It is an ERC-20 token deployed on the
+                      Ethereum blockchain. $WASTE has a supply cap of 1 billion
+                      tokens. Players can purchase NFTs with $WASTE in the game,
+                      get rewards from the contribution pool, and stake $WASTE
+                      to get additional token rewards.
+                    </div>
+                    <br />
+                    <div>
+                      The Wasteland Settlers community owns 85% of the total
+                      $WASTE tokens. Others are reserved for private investors
+                      and the team. Details of the allocation are listed in the
+                      following table:
+                    </div>
+                    <img
+                      style={{ width: "100%" }}
+                      src={Img_token1}
+                      alt="Img_token1"
+                    />
+                  </div>
+                }
+              />
+              <FAQItem
+                title="When will be airdrop?"
+                desc={
+                  <div>
+                    The airdrop is definitely there for fans of game, please
+                    keep an eye on Wasteland Settlers website and follow us on
+                    social media for the dates of upcoming airdrop
+                  </div>
+                }
+              />
+              <FAQItem
+                title="When will Wasteland Settlers be accessed to play?"
+                desc={
+                  <div>
+                    Please keep an eye on Wasteland Settlers website and follow
+                    us on social media for the dates of launch.
+                  </div>
+                }
+              />
+              <FAQItem
+                title="Is Wasteland Settlers a free-to-play game?"
+                desc={<div>Yes</div>}
+              />
+              <FAQItem
+                title="Compared with other blockchain game, what are the key advantages of Wasteland Settlers?"
+                desc={
+                  <div>
+                    <div>We summarized the differentiations below:</div>
+                    <ul>
+                      <li>
+                        Wasteland is a <b>free-to-play game</b>, you don't need
+                        to pay any token upfront to play the game. Everyone is
+                        welcome to start enjoying the fun of the game, learning
+                        how to play and understanding tokenomics and calculation
+                        of ROI. Of course, purchasing tools and chests will help
+                        the players to gain more from exploration and rewards.
+                      </li>
+                      <li>
+                        Wasteland Settlers is wasteland-type RPG game We are
+                        building the wasteland metaverse, players survives in
+                        the nuclear-bombed land.{" "}
+                        <b>Players don't need to level up</b>, simply explore
+                        the land and equip their villagers, or increase the
+                        power of the space shuttle for launching it one day to
+                        find a new planet.
+                      </li>
+                      <li>
+                        An unique tokenomics - Contribution Pool, it{" "}
+                        <b>
+                          solves the problem of Hyperinflationary and that NFTs
+                          are hard to sell
+                        </b>
+                        . The Contribution Pool takes all NFTs and rewards
+                        contributors fairly. Every player enjoys lifetime
+                        rewards from the Contribution Pool, the more
+                        contributions, the more rewards.
+                      </li>
+                      <li>
+                        <b>
+                          The future of this game is driven by the community, in
+                          which 85% of $WASTE tokens are distributed to the
+                          community
+                        </b>
+                        , the DAO tokens are staked and used based on the
+                        voting. The projects will move to DAO model of
+                        governance.. The source codes are open and audited. It's
+                        transparent to all players.
+                      </li>
+                    </ul>
+                  </div>
+                }
+              />
+              <FAQItem
+                title="Where can I trade tokens and NFTs from Wasteland Settlers?"
+                desc={
+                  <div>
+                    We are engaging with major exchanges and DEXs. please keep
+                    an eye on Wasteland Settlers website and follow us on social
+                    media. To trade NFTs, you can find ‘Market' in the game to
+                    trade NFTs directly.
+                  </div>
+                }
+              />
             </div>
             <div
               className={classNames(`${prefix}-supporters-content-item-bottom`)}
