@@ -166,7 +166,7 @@ const MobileComponent = () => {
           </div>
           <Header title="TOKEN ECONOMICS" />
           <div className={classNames(`${prefix}-token-desc`)}>
-            It is 1 billion ERC-20 tokens deployed on the Ethereum blockchain
+            WASTE is an EVM compatible tokens deployed on multiple blockchains. WASTE has a supply cap of 1 billion tokens.
           </div>
           <div className={classNames(`${prefix}-token-distribution`)}>
             <div className={classNames(`${prefix}-token-distribution-title`)}>
@@ -200,7 +200,7 @@ const MobileComponent = () => {
         <div className={classNames(`${prefix}-reward`)}>
           <Header title="STAKING REWARD" />
           <div className={classNames(`${prefix}-reward-desc`)}>
-            19.5% of $WASTE tokens are allocated for staking incentives, and
+            19.89% of $WASTE tokens are allocated for staking incentives, and
             they are emitted based on a pre-defined schedule as described in the
             following table.
           </div>
