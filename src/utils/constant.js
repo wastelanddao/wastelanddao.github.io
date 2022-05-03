@@ -3,7 +3,7 @@ export const externalLine = [
   { key: "Discord", value: "https://discord.gg/sQFdvhCt" },
   { key: "Medium", value: "https://medium.com/@wastelandsettlers" },
   {
-    key: "WHITERAPER",
+    key: "WHITEPAPER",
     value: "https://docs.wastelandsettlers.com/v/whitepaper/",
   },
   {

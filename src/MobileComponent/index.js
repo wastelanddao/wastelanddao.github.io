@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import classNames from "classnames";
 import { Popup } from "antd-mobile";
 
@@ -52,6 +52,17 @@ const MobileComponent = () => {
   const handleCancel = () => {
     setVisible(false);
   };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => init(), 300);
+    return () => clearTimeout(timeout);
+    async function init() {
+      const { hash } = window.location;
+      if (hash) {
+        scrollToAnchor(hash.slice(1).toUpperCase());
+      }
+    }
+  }, []);
 
   const scrollToAnchor = (anchorName) => {
     if (anchorName) {
@@ -166,7 +177,8 @@ const MobileComponent = () => {
           </div>
           <Header title="TOKEN ECONOMICS" />
           <div className={classNames(`${prefix}-token-desc`)}>
-            WASTE is an EVM compatible tokens deployed on multiple blockchains. WASTE has a supply cap of 1 billion tokens.
+            WASTE is an EVM compatible tokens deployed on multiple blockchains.
+            WASTE has a supply cap of 1 billion tokens.
           </div>
           <div className={classNames(`${prefix}-token-distribution`)}>
             <div className={classNames(`${prefix}-token-distribution-title`)}>
@@ -553,9 +565,9 @@ const MobileComponent = () => {
             </div>
             <div
               className={classNames(`${prefix}-popup-container-nav-item`)}
-              onClick={() => jumpToExternalLink("WHITERAPER")}
+              onClick={() => jumpToExternalLink("WHITEPAPER")}
             >
-              WHITERAPER
+              WHITEPAPER
             </div>
             <div
               className={classNames(`${prefix}-popup-container-nav-item`)}

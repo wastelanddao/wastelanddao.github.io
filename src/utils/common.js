@@ -9,6 +9,7 @@ export const getUserAgent = () => {
 export const jumpToExternalLink = (val) => {
   const obj = externalLine.find((item) => item.key === val);
   if (obj) {
-    window.open(obj.value);
+    const newWindow = window.open(obj.value);
+    newWindow.opener = null;
   }
 };

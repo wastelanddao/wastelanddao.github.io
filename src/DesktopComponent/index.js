@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classNames from "classnames";
 
 import "./index.less";
@@ -44,6 +44,17 @@ import { jumpToExternalLink } from "../utils/common";
 const DesktopComponent = () => {
   const prefix = "page-home-desktop";
 
+  useEffect(() => {
+    const timeout = setTimeout(() => init(), 300);
+    return () => clearTimeout(timeout);
+    async function init() {
+      const { hash } = window.location;
+      if (hash) {
+        scrollToAnchor(hash.slice(1).toUpperCase());
+      }
+    }
+  }, []);
+
   const scrollToAnchor = (anchorName) => {
     if (anchorName) {
       // 找到锚点
@@ -73,8 +84,8 @@ const DesktopComponent = () => {
             >
               HOME
             </div>
-            <div onClick={() => jumpToExternalLink("WHITERAPER")}>
-              WHITERAPER
+            <div onClick={() => jumpToExternalLink("WHITEPAPER")}>
+              WHITEPAPER
             </div>
             <div onClick={() => scrollToAnchor("TOKENOMICS")}>TOKENOMICS</div>
             <div onClick={() => scrollToAnchor("ROADMAP")}>ROADMAP</div>
@@ -223,7 +234,8 @@ const DesktopComponent = () => {
           </div>
         </div>
         <div className={classNames(`${prefix}-token-desc`)}>
-          WASTE is an EVM compatible tokens deployed on multiple blockchains. WASTE has a supply cap of 1 billion tokens.
+          WASTE is an EVM compatible tokens deployed on multiple blockchains.
+          WASTE has a supply cap of 1 billion tokens.
         </div>
         <div className={classNames(`${prefix}-token-distribution`)}>
           <div className={classNames(`${prefix}-token-distribution-title`)}>
