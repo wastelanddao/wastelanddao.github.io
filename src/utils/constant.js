@@ -1,6 +1,9 @@
 export const externalLine = [
   { key: "Twitter", value: "https://twitter.com/WastelandDAO" },
-  { key: "Discord", value: "https://discord.gg/sQFdvhCt" },
+  {
+    key: "Discord",
+    value: "https://discord.gg/yMYsc2ryMT",
+  },
   { key: "Medium", value: "https://medium.com/@wastelandsettlers" },
   {
     key: "WHITEPAPER",
