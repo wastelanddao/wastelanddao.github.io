@@ -13,4 +13,9 @@ export const externalLine = [
     key: "SIGNUP",
     value: "https://forms.gle/rJbtpoHQCYkYHTfD6",
   },
+  {
+    key: "ContributionPoolMore",
+    value:
+      "https://medium.com/@wastelandsettlers/burn-to-reward-mechanism-6e1ff859719",
+  },
 ];

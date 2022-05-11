@@ -205,8 +205,21 @@ const MobileComponent = () => {
           <div className={classNames(`${prefix}-pool-desc`)}>
             The Contribution Pool contains 5 elements: Fire, Earth, Metal, Water
             and Wood, it burns NFTs and sends contributors different element
-            pool rewards to the contributors. Contribution Pool solves the
-            problem of Hyperinflationary and that NFTs are hard to sell.
+            pool rewards to the contributors. Contribution Pool uses{" "}
+            <span
+              className={classNames(`${prefix}-pool-desc-reward`)}
+              onClick={() => jumpToExternalLink("ContributionPoolMore")}
+            >
+              Burn-to-Reward
+            </span>{" "}
+            mechanism, to solve the problem of Hyperinflationary and that NFTs
+            are hard to sell.
+            <div
+              className={classNames(`${prefix}-pool-desc-more`)}
+              onClick={() => jumpToExternalLink("ContributionPoolMore")}
+            >
+              Learn More
+            </div>
           </div>
         </div>
         <div className={classNames(`${prefix}-reward`)}>
