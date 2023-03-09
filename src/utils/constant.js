@@ -7,7 +7,7 @@ export const externalLine = [
   { key: "Medium", value: "https://medium.com/@wastelandsettlers" },
   {
     key: "WHITEPAPER",
-    value: "https://docs.wastelandsettlers.com/v/whitepaper/",
+    value: "https://docs.wastelandsettlers.org/v/whitepaper/",
   },
   {
     key: "SIGNUP",
